@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Manifest",
+  "description": "A Google Chrome extension manifest",
+  "type": "object",
+  "properties": {
+  }
+}
