@@ -3,7 +3,7 @@
   "title": "Manifest",
   "description": "A Google Chrome extension manifest",
   "type": "object",
-  "required": [ "manifest_version" ],
+  "required": [ "manifest_version", "name", "version" ],
   "properties": {
 
     "manifest_version": {
@@ -11,6 +11,16 @@
       "description": "One integer specifying the version of the manifest file format your package requires.",
       "minimum": 2,
       "maxinum": 2
+    },
+
+    "name": {
+      "type": "string",
+      "description": "The name of the extension"
+    },
+
+    "version": {
+      "type": "string",
+      "description": "One to four dot-separated integers identifying the version of this extension."
     }
 
   }
