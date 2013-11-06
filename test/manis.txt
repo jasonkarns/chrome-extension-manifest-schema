@@ -1,0 +1,269 @@
+url = "http://developer.chrome.com/extensions/examples/api/bookmarks/basic/manifest.json"
+output = 01.json
+
+url = "http://developer.chrome.com/extensions/examples/api/browserAction/make_page_red/manifest.json"
+output = 02.json
+
+url = "http://developer.chrome.com/extensions/examples/api/browserAction/print/manifest.json"
+output = 03.json
+
+url = "http://developer.chrome.com/extensions/examples/api/browserAction/set_icon_path/manifest.json"
+output = 04.json
+
+url = "http://developer.chrome.com/extensions/examples/api/browserAction/set_page_color/manifest.json"
+output = 05.json
+
+url = "http://developer.chrome.com/extensions/examples/api/browsingData/basic/manifest.json"
+output = 06.json
+
+url = "http://developer.chrome.com/extensions/examples/api/commands/manifest.json"
+output = 07.json
+
+url = "http://developer.chrome.com/extensions/examples/api/contentSettings/manifest.json"
+output = 08.json
+
+url = "http://developer.chrome.com/extensions/examples/api/contextMenus/basic/manifest.json"
+output = 09.json
+
+url = "http://developer.chrome.com/extensions/examples/api/contextMenus/event_page/manifest.json"
+output = 10.json
+
+url = "http://developer.chrome.com/extensions/examples/api/cookies/manifest.json"
+output = 11.json
+
+url = "http://developer.chrome.com/extensions/examples/api/debugger/live-headers/manifest.json"
+output = 12.json
+
+url = "http://developer.chrome.com/extensions/examples/api/debugger/pause-resume/manifest.json"
+output = 13.json
+
+url = "http://developer.chrome.com/extensions/examples/api/desktopCapture/manifest.json"
+output = 14.json
+
+url = "http://developer.chrome.com/extensions/examples/api/deviceInfo/basic/manifest.json"
+output = 15.json
+
+url = "http://developer.chrome.com/extensions/examples/api/devtools/audits/broken-links/manifest.json"
+output = 16.json
+
+url = "http://developer.chrome.com/extensions/examples/api/devtools/inspectedWindow/chrome-preprocessor/manifest.json"
+output = 17.json
+
+url = "http://developer.chrome.com/extensions/examples/api/devtools/network/chrome-firephp/manifest.json"
+output = 18.json
+
+url = "http://developer.chrome.com/extensions/examples/api/devtools/panels/chrome-query/manifest.json"
+output = 19.json
+
+url = "http://developer.chrome.com/extensions/examples/api/downloads/download_filename_controller/manifest.json"
+output = 20.json
+
+url = "http://developer.chrome.com/extensions/examples/api/downloads/download_links/manifest.json"
+output = 21.json
+
+url = "http://developer.chrome.com/extensions/examples/api/downloads/download_manager/manifest.json"
+output = 22.json
+
+url = "http://developer.chrome.com/extensions/examples/api/downloads/download_open/manifest.json"
+output = 23.json
+
+url = "http://developer.chrome.com/extensions/examples/api/downloads/downloads_overwrite/manifest.json"
+output = 24.json
+
+url = "http://developer.chrome.com/extensions/examples/api/eventPage/basic/manifest.json"
+output = 25.json
+
+url = "http://developer.chrome.com/extensions/examples/api/extension/isAllowedAccess/manifest.json"
+output = 26.json
+
+url = "http://developer.chrome.com/extensions/examples/api/fontSettings/manifest.json"
+output = 27.json
+
+url = "http://developer.chrome.com/extensions/examples/api/history/showHistory/manifest.json"
+output = 28.json
+
+url = "http://developer.chrome.com/extensions/examples/api/i18n/cld/manifest.json"
+output = 29.json
+
+url = "http://developer.chrome.com/extensions/examples/api/i18n/getMessage/manifest.json"
+output = 30.json
+
+url = "http://developer.chrome.com/extensions/examples/api/i18n/localizedHostedApp/manifest.json"
+output = 31.json
+
+url = "http://developer.chrome.com/extensions/examples/api/idle/idle_simple/manifest.json"
+output = 32.json
+
+url = "http://developer.chrome.com/extensions/examples/api/infobars/sandwichbar/manifest.json"
+output = 33.json
+
+url = "http://developer.chrome.com/extensions/examples/api/input.ime/basic/manifest.json"
+output = 34.json
+
+url = "http://developer.chrome.com/extensions/examples/api/messaging/timer/manifest.json"
+output = 35.json
+
+url = "http://developer.chrome.com/extensions/examples/api/nativeMessaging/app/manifest.json"
+output = 36.json
+
+url = "http://developer.chrome.com/extensions/examples/api/notifications/manifest.json"
+output = 37.json
+
+url = "http://developer.chrome.com/extensions/examples/api/omnibox/simple-example/manifest.json"
+output = 38.json
+
+url = "http://developer.chrome.com/extensions/examples/api/override/blank_ntp/manifest.json"
+output = 39.json
+
+url = "http://developer.chrome.com/extensions/examples/api/override/override_igoogle/manifest.json"
+output = 40.json
+
+url = "http://developer.chrome.com/extensions/examples/api/pageAction/pageaction_by_content/manifest.json"
+output = 41.json
+
+url = "http://developer.chrome.com/extensions/examples/api/pageAction/pageaction_by_url/manifest.json"
+output = 42.json
+
+url = "http://developer.chrome.com/extensions/examples/api/pageAction/set_icon/manifest.json"
+output = 43.json
+
+url = "http://developer.chrome.com/extensions/examples/api/permissions/extension-questions/manifest.json"
+output = 44.json
+
+url = "http://developer.chrome.com/extensions/examples/api/power/manifest.json"
+output = 45.json
+
+url = "http://developer.chrome.com/extensions/examples/api/preferences/allowThirdPartyCookies/manifest.json"
+output = 46.json
+
+url = "http://developer.chrome.com/extensions/examples/api/preferences/enableReferrer/manifest.json"
+output = 47.json
+
+url = "http://developer.chrome.com/extensions/examples/api/processes/process_monitor/manifest.json"
+output = 48.json
+
+url = "http://developer.chrome.com/extensions/examples/api/processes/show_tabs/manifest.json"
+output = 49.json
+
+url = "http://developer.chrome.com/extensions/examples/api/storage/stylizr/manifest.json"
+output = 50.json
+
+url = "http://developer.chrome.com/extensions/examples/api/tabs/inspector/manifest.json"
+output = 51.json
+
+url = "http://developer.chrome.com/extensions/examples/api/tabs/pin/manifest.json"
+output = 52.json
+
+url = "http://developer.chrome.com/extensions/examples/api/tabs/screenshot/manifest.json"
+output = 53.json
+
+url = "http://developer.chrome.com/extensions/examples/api/topsites/basic/manifest.json"
+output = 54.json
+
+url = "http://developer.chrome.com/extensions/examples/api/topsites/magic8ball/manifest.json"
+output = 55.json
+
+url = "http://developer.chrome.com/extensions/examples/api/ttsEngine/console_tts_engine/manifest.json"
+output = 56.json
+
+url = "http://developer.chrome.com/extensions/examples/api/webNavigation/basic/manifest.json"
+output = 57.json
+
+url = "http://developer.chrome.com/extensions/examples/api/windows/merge_windows/manifest.json"
+output = 58.json
+
+url = "http://developer.chrome.com/extensions/examples/apps/background-simple/manifest.json"
+output = 59.json
+
+url = "http://developer.chrome.com/extensions/examples/apps/calculator/app/manifest.json"
+output = 60.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/app_launcher/manifest.json"
+output = 61.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/benchmark/manifest.json"
+output = 62.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/buildbot/manifest.json"
+output = 63.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/calendar/manifest.json"
+output = 64.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/catblock/manifest.json"
+output = 65.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/catifier/manifest.json"
+output = 66.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/chrome_search/manifest.json"
+output = 67.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/email_this_page/manifest.json"
+output = 68.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/fx/manifest.json"
+output = 69.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/gdocs/manifest.json"
+output = 70.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/gmail/manifest.json"
+output = 71.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/imageinfo/manifest.json"
+output = 72.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/irc/app/manifest.json"
+output = 73.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/mappy/manifest.json"
+output = 74.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/maps_app/manifest.json"
+output = 75.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/news/manifest.json"
+output = 76.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/news_a11y/manifest.json"
+output = 77.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/news_i18n/manifest.json"
+output = 78.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/oauth_contacts/manifest.json"
+output = 79.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/plugin_settings/manifest.json"
+output = 80.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/proxy_configuration/manifest.json"
+output = 81.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/speak_selection/manifest.json"
+output = 82.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/talking_alarm_clock/manifest.json"
+output = 83.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/ttsdebug/manifest.json"
+output = 84.json
+
+url = "http://developer.chrome.com/extensions/examples/extensions/ttsdemo/manifest.json"
+output = 85.json
+
+url = "http://developer.chrome.com/extensions/examples/howto/contentscript_xhr/manifest.json"
+output = 86.json
+
+url = "http://developer.chrome.com/extensions/examples/howto/sandbox/manifest.json"
+output = 87.json
+
+url = "http://developer.chrome.com/extensions/examples/howto/tab_shortcuts/manifest.json"
+output = 88.json
+
+url = "http://developer.chrome.com/extensions/examples/tutorials/analytics/manifest.json"
+output = 89.json
+
+url = "http://developer.chrome.com/extensions/examples/tutorials/getstarted/manifest.json"
+output = 90.json
