@@ -3,6 +3,7 @@
   "title": "Manifest",
   "description": "A Google Chrome extension manifest",
   "type": "object",
+  "required": [ "manifest_version" ],
   "properties": {
 
     "manifest_version": {
