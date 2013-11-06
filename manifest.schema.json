@@ -22,6 +22,18 @@
       "type": "string",
       "description": "One to four dot-separated integers identifying the version of this extension.",
       "pattern": "^(?:\\d{1,5}\\.){0,3}\\d{1,5}$"
+    },
+
+    "default_locale": {
+      "type": "string",
+      "description": "Specifies the subdirectory of _locales that contains the default strings for this extension.",
+      "default": "en"
+    },
+
+    "description": {
+      "type": "string",
+      "description": "A plain text description of the extension",
+      "maxLength": 132
     }
 
   }
