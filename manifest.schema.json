@@ -4,5 +4,13 @@
   "description": "A Google Chrome extension manifest",
   "type": "object",
   "properties": {
+
+    "manifest_version": {
+      "type": "number",
+      "description": "One integer specifying the version of the manifest file format your package requires.",
+      "minimum": 2,
+      "maxinum": 2
+    }
+
   }
 }
