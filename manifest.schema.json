@@ -34,6 +34,26 @@
       "type": "string",
       "description": "A plain text description of the extension",
       "maxLength": 132
+    },
+
+    "icons": {
+      "type": "object",
+      "description": "One or more icons that represent the extension, app, or theme. Recommended format: PNG; also BMP, GIF, ICO, JPEG.",
+      "minProperties": 1,
+      "properties": {
+        "16": {
+          "type": "string",
+          "description": "Used as the favicon for an extension's pages and infobar."
+        },
+        "48": {
+          "type": "string",
+          "description": "Used on the extension management page (chrome://extensions)."
+        },
+        "128": {
+          "type": "string",
+          "description": "Used during installation and in the Chrome Web Store."
+        }
+      }
     }
 
   }
