@@ -99,16 +99,8 @@
         }
       },
       "dependencies": {
-        "page": {
-          "not": {
-            "required": [ "scripts" ]
-          }
-        },
-        "scripts": {
-          "not": {
-            "required": [ "page" ]
-          }
-        }
+        "page": { "not": { "required": ["scripts"] } },
+        "scripts": { "not": { "required": ["page"] } }
       }
     }
 
@@ -116,17 +108,8 @@
 
   "dependencies": {
 
-    "page_action": {
-      "not": {
-        "required": [ "browser_action" ]
-      }
-    },
-
-    "browser_action": {
-      "not": {
-        "required": [ "page_action" ]
-      }
-    }
+    "page_action": { "not": { "required": [ "browser_action" ] } },
+    "browser_action": { "not": { "required": [ "page_action" ] } },
 
   },
 
@@ -140,6 +123,15 @@
     "action": {
       "type": "object",
       "properties": {
+        "default_title": {
+          "type": "string",
+          "description": "Tooltip for the main toolbar icon."
+        },
+        "default_popup": {
+          "type": "string",
+          "format": "uri",
+          "description": "The popup appears when the user clicks the icon."
+        },
         "default_icon": {
           "anyOf": [
             {
@@ -159,15 +151,6 @@
               }
             }
           ]
-        },
-        "default_title": {
-          "type": "string",
-          "description": "Tooltip for the main toolbar icon."
-        },
-        "default_popup": {
-          "type": "string",
-          "format": "uri",
-          "description": "The popup appears when the user clicks the icon."
         }
       }
     }
