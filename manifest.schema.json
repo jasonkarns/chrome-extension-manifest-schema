@@ -58,6 +58,44 @@
           "description": "Used during installation and in the Chrome Web Store."
         }
       }
+    },
+
+    "browser_action": {
+      "type": "object",
+      "description": "Use browser actions to put icons in the main Google Chrome toolbar, to the right of the address bar. In addition to its icon, a browser action can also have a tooltip, a badge, and a popup.",
+      "properties": {
+        "default_icon": {
+          "anyOf": [
+            {
+              "type": "string",
+              "description": "FIXME: String form is deprecated."
+            },
+            {
+              "type": "object",
+              "description": "Icon for the main toolbar.",
+              "properties": {
+                "19": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "38": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            }
+          ]
+        },
+        "default_title": {
+          "type": "string",
+          "description": "Tooltip for the main toolbar icon."
+        },
+        "default_popup": {
+          "type": "string",
+          "format": "uri",
+          "description": "If a browser action has a popup, the popup appears when the user clicks the icon. The popup can contain any HTML contents that you like, and it's automatically sized to fit its contents."
+        }
+      }
     }
 
   },
