@@ -43,18 +43,15 @@
       "minProperties": 1,
       "properties": {
         "16": {
-          "type": "string",
-          "format": "uri",
+          "$ref": "#/definitions/icon",
           "description": "Used as the favicon for an extension's pages and infobar."
         },
         "48": {
-          "type": "string",
-          "format": "uri",
+          "$ref": "#/definitions/icon",
           "description": "Used on the extension management page (chrome://extensions)."
         },
         "128": {
-          "type": "string",
-          "format": "uri",
+          "$ref": "#/definitions/icon",
           "description": "Used during installation and in the Chrome Web Store."
         }
       }
@@ -90,6 +87,11 @@
 
   "definitions": {
 
+    "icon": {
+      "type": "string",
+      "format": "uri"
+    },
+
     "action": {
       "type": "object",
       "properties": {
@@ -104,12 +106,10 @@
               "description": "Icon for the main toolbar.",
               "properties": {
                 "19": {
-                  "type": "string",
-                  "format": "uri"
+                  "$ref": "#/definitions/icon"
                 },
                 "38": {
-                  "type": "string",
-                  "format": "uri"
+                  "$ref": "#/definitions/icon"
                 }
               }
             }
