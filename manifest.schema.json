@@ -61,8 +61,32 @@
     },
 
     "browser_action": {
+      "$ref": "#/definitions/action",
+      "description": "Use browser actions to put icons in the main Google Chrome toolbar, to the right of the address bar. In addition to its icon, a browser action can also have a tooltip, a badge, and a popup."
+    }
+
+  },
+
+  "dependencies": {
+
+    "page_action": {
+      "not": {
+        "required": [ "browser_action" ]
+      }
+    },
+
+    "browser_action": {
+      "not": {
+        "required": [ "page_action" ]
+      }
+    }
+
+  },
+
+  "definitions": {
+
+    "action": {
       "type": "object",
-      "description": "Use browser actions to put icons in the main Google Chrome toolbar, to the right of the address bar. In addition to its icon, a browser action can also have a tooltip, a badge, and a popup.",
       "properties": {
         "default_icon": {
           "anyOf": [
@@ -93,27 +117,10 @@
         "default_popup": {
           "type": "string",
           "format": "uri",
-          "description": "If a browser action has a popup, the popup appears when the user clicks the icon. The popup can contain any HTML contents that you like, and it's automatically sized to fit its contents."
+          "description": "The popup appears when the user clicks the icon."
         }
       }
     }
-
-  },
-
-  "dependencies": {
-
-    "page_action": {
-      "not": {
-        "required": [ "browser_action" ]
-      }
-    },
-
-    "browser_action": {
-      "not": {
-        "required": [ "page_action" ]
-      }
-    }
-
   }
 
 }
