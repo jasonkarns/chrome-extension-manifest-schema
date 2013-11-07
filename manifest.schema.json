@@ -4,6 +4,7 @@
   "description": "A Google Chrome extension manifest",
   "type": "object",
   "required": [ "manifest_version", "name", "version" ],
+
   "properties": {
 
     "manifest_version": {
@@ -56,5 +57,22 @@
       }
     }
 
+  },
+
+  "dependencies": {
+
+    "page_action": {
+      "not": {
+        "required": [ "browser_action" ]
+      }
+    },
+
+    "browser_action": {
+      "not": {
+        "required": [ "page_action" ]
+      }
+    }
+
   }
+
 }
