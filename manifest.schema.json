@@ -95,8 +95,8 @@
         }
       },
       "dependencies": {
-        "page": { "not": { "required": ["scripts"] } },
-        "scripts": { "not": { "required": ["page"] } }
+        "page":    { "not": { "required": ["scripts"] } },
+        "scripts": { "not": { "required": ["page"]    } }
       }
     }
 
@@ -104,12 +104,13 @@
 
   "dependencies": {
 
-    "page_action": { "not": { "required": [ "browser_action" ] } },
-    "browser_action": { "not": { "required": [ "page_action" ] } },
+    "page_action":     { "not": { "required": ["browser_action"]  } },
+    "browser_action":  { "not": { "required": ["page_action"]     } },
 
-    "background_page": { "not": { "required": [ "background_page" ] } },
-    "page_actions": { "not": { "required": [ "page_actions" ] } },
-    "browser_actions": { "not": { "required": [ "browser_actions" ] } }
+    "background_page": { "not": { "required": ["background_page"] } },
+    "page_actions":    { "not": { "required": ["page_actions"]    } },
+    "browser_actions": { "not": { "required": ["browser_actions"] } },
+    "author":          { "not": { "required": ["author"]          } }
 
   },
 
@@ -155,7 +156,7 @@
       },
 
       "dependencies": {
-        "name": { "not": { "required": ["name"] } },
+        "name":  { "not": { "required": ["name"]  } },
         "icons": { "not": { "required": ["icons"] } },
         "popup": { "not": { "required": ["popup"] } }
       }
