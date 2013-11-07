@@ -5,10 +5,6 @@
   "type": "object",
   "required": [ "manifest_version", "name", "version" ],
 
-  "not": {
-    "required": [ "background_page" ]
-  },
-
   "properties": {
 
     "manifest_version": {
@@ -111,6 +107,10 @@
     "page_action": { "not": { "required": [ "browser_action" ] } },
     "browser_action": { "not": { "required": [ "page_action" ] } },
 
+    "background_page": { "not": { "required": [ "background_page" ] } },
+    "page_actions": { "not": { "required": [ "page_actions" ] } },
+    "browser_actions": { "not": { "required": [ "browser_actions" ] } }
+
   },
 
   "definitions": {
@@ -152,6 +152,12 @@
             }
           ]
         }
+      },
+
+      "dependencies": {
+        "name": { "not": { "required": ["name"] } },
+        "icons": { "not": { "required": ["icons"] } },
+        "popup": { "not": { "required": ["popup"] } }
       }
     }
   }
