@@ -99,6 +99,8 @@
       }
     },
 
+    "chrome_settings_overrides": {},
+
     "chrome_url_overrides": {
       "type": "object",
       "description": "Override pages are a way to substitute an HTML file from your extension for a page that Google Chrome normally provides.",
@@ -148,16 +150,6 @@
   },
 
   "definitions": {
-
-    "icon": {
-      "type": "string",
-      "format": "uri"
-    },
-
-    "page": {
-      "type": "string",
-      "format": "uri"
-    },
 
     "action": {
       "type": "object",
@@ -218,7 +210,18 @@
         }
       },
       "additionalProperties": false
+    },
+
+    "icon": {
+      "type": "string",
+      "format": "uri"
+    },
+
+    "page": {
+      "type": "string",
+      "format": "uri"
     }
+
   }
 
 }
