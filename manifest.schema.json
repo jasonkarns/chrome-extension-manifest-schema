@@ -121,6 +121,16 @@
       },
       "additionalProperties": false,
       "maxProperties": 1
+    },
+
+    "commands": {
+      "type": "object",
+      "description": "Use the commands API to add keyboard shortcuts that trigger actions in your extension, for example, an action to open the browser action or send a command to the extension.",
+      "patternProperties": {
+        ".*":                        { "$ref": "#/definitions/command" },
+        "^_execute_browser_action$": { "$ref": "#/definitions/command" },
+        "^_execute_page_action$":    { "$ref": "#/definitions/command" }
+      }
     }
 
   },
@@ -188,6 +198,26 @@
         "icons": { "not": { "required": ["icons"] } },
         "popup": { "not": { "required": ["popup"] } }
       }
+    },
+
+    "command": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "suggested_key": {
+          "type": "object",
+          "patternProperties": {
+            "^(default|mac|windows|linux|chromeos)$": {
+              "type": "string",
+              "pattern": "^(Ctrl|Command|MacCtrl|Alt|Option)\\+(Shift\\+)?[A-Z]"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     }
   }
 
