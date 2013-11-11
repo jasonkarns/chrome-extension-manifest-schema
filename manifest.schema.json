@@ -141,6 +141,13 @@
       "uniqueItems": true
     },
 
+    "content_security_policy": {
+      "type": "string",
+      "description": "This introduces some fairly strict policies that will make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and executed by your extensions and applications.",
+      "format": "content_security_policy",
+      "default": "script-src 'self'; object-src 'self'"
+    },
+
     "chrome_settings_overrides": {},
     "content_pack": {}
   },
