@@ -133,6 +133,14 @@
       }
     },
 
+    "content_scripts": {
+      "type": "array",
+      "description": "Content scripts are JavaScript files that run in the context of web pages.",
+      "items": { "$ref": "#/definitions/content_script" },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+
     "chrome_settings_overrides": {},
     "content_pack": {}
   },
@@ -207,6 +215,62 @@
             }
           },
           "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "content_script": {
+      "type": "object",
+      "required": ["matches"],
+      "properties": {
+        "matches": {
+          "type": "array",
+          "description": "Specifies which pages this content script will be injected into.",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "exclude_matches": {
+          "type": "array",
+          "description": "Excludes pages that this content script would otherwise be injected into.",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "css": {
+          "type": "array",
+          "description": "The list of CSS files to be injected into matching pages. These are injected in the order they appear in this array, before any DOM is constructed or displayed for the page.",
+          "items": { "type": "string", "format": "uri" },
+          "uniqueItems": true
+        },
+        "js": {
+          "type": "array",
+          "description": "The list of JavaScript files to be injected into matching pages. These are injected in the order they appear in this array.",
+          "items": { "type": "string", "format": "uri" },
+          "uniqueItems": true
+        },
+        "run_at": {
+          "type": "string",
+          "description": "Controls when the files in js are injected.",
+          "enum": [ "document_start", "document_end", "document_idle" ],
+          "default": "document_idle"
+        },
+        "all_frames": {
+          "type": "boolean",
+          "description": "Controls whether the content script runs in all frames of the matching page, or only the top frame.",
+          "default": false
+        },
+        "include_globs": {
+          "type": "array",
+          "description": "Applied after matches to include only those URLs that also match this glob. Intended to emulate the @include Greasemonkey keyword.",
+          "items": { "type": "string" },
+          "uniqueItems": true
+        },
+        "exclude_globs": {
+          "type": "array",
+          "description": "Applied after matches to exclude URLs that match this glob. Intended to emulate the @exclude Greasemonkey keyword.",
+          "items": { "type": "string" },
+          "uniqueItems": true
         }
       },
       "additionalProperties": false
