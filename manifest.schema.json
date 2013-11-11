@@ -227,14 +227,14 @@
         "matches": {
           "type": "array",
           "description": "Specifies which pages this content script will be injected into.",
-          "items": { "type": "string" },
+          "items": { "type": "string", "format": "match_pattern", "pattern": "<all_urls>|((\\*|http|https|file|ftp|chrome-extension):\\/\\/(\\*|\\*\\.[^\\/\\*]+|[^\\/\\*]+)?(\\/.*))" },
           "minItems": 1,
           "uniqueItems": true
         },
         "exclude_matches": {
           "type": "array",
           "description": "Excludes pages that this content script would otherwise be injected into.",
-          "items": { "type": "string" },
+          "items": { "type": "string", "format": "match_pattern", "pattern": "<all_urls>|((\\*|http|https|file|ftp|chrome-extension):\\/\\/(\\*|\\*\\.[^\\/\\*]+|[^\\/\\*]+)?(\\/.*))" },
           "uniqueItems": true
         },
         "css": {
@@ -263,13 +263,13 @@
         "include_globs": {
           "type": "array",
           "description": "Applied after matches to include only those URLs that also match this glob. Intended to emulate the @include Greasemonkey keyword.",
-          "items": { "type": "string" },
+          "items": { "type": "string", "format": "glob_pattern" },
           "uniqueItems": true
         },
         "exclude_globs": {
           "type": "array",
           "description": "Applied after matches to exclude URLs that match this glob. Intended to emulate the @exclude Greasemonkey keyword.",
-          "items": { "type": "string" },
+          "items": { "type": "string", "format": "glob_pattern" },
           "uniqueItems": true
         }
       },
