@@ -15,6 +15,10 @@ module.exports = (grunt) ->
         files:
           "manifest.schema.json": "test/*.json"
 
+      schema:
+        files:
+          "schemas/json-schema.schema.json": "manifest.schema.json"
+
   grunt.loadNpmTasks "grunt-json-schema"
   grunt.loadNpmTasks "grunt-tv4"
 
