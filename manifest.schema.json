@@ -202,10 +202,11 @@
     "page_action":     { "not": { "required": ["browser_action"]  } },
     "browser_action":  { "not": { "required": ["page_action"]     } },
 
-    "background_page": { "not": { "required": ["background_page"] } },
-    "page_actions":    { "not": { "required": ["page_actions"]    } },
-    "browser_actions": { "not": { "required": ["browser_actions"] } },
-    "author":          { "not": { "required": ["author"]          } }
+    "background_page":            { "not": { "required": ["background_page"]            } } ,
+    "page_actions":               { "not": { "required": ["page_actions"]               } } ,
+    "browser_actions":            { "not": { "required": ["browser_actions"]            } } ,
+    "author":                     { "not": { "required": ["author"]                     } } ,
+    "converted_from_user_script": { "not": { "required": ["converted_from_user_script"] } }
 
   },
 
@@ -305,5 +306,4 @@
     }
 
   }
-
 }
