@@ -198,6 +198,33 @@
       "description": "A DevTools extension adds functionality to the Chrome DevTools. It can add new UI panels and sidebars, interact with the inspected page, get information about network requests, and more."
     },
 
+    "externally_connectable": {
+      "type": "object",
+      "description": "Declares which extensions, apps, and web pages can connect to your extension via runtime.connect and runtime.sendMessage.",
+      "properties": {
+        "id": {
+          "type": "array",
+          "description": "The IDs of extensions or apps that are allowed to connect. If left empty or unspecified, no extensions or apps can connect. The wildcard '*' will allow all extensions and apps to connect.",
+          "items": {
+            "type": "string",
+            "pattern": "^(?:[a-zA-Z]{32})|\\*$"
+          }
+        },
+        "matches": {
+          "type": "array",
+          "description": "The URL patterns for web pages that are allowed to connect. This does not affect content scripts. If left empty or unspecified, no web pages can connect.",
+          "items": {
+            "$ref": "#/definitions/match_pattern"
+          }
+        },
+        "accepts_tls_channel_id": {
+          "type": "boolean",
+          "description": "Determines if messages sent via `runtime.connect` or `runtime.sendMessage` are allowed to set `runtime.MessageSender.tlsChannelId`."
+        }
+      },
+      "additionalProperties": false
+    },
+
     "chrome_settings_overrides": {},
     "content_pack": {},
     "current_locale": {}
