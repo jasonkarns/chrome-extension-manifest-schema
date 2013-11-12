@@ -193,8 +193,15 @@
       "default": "script-src 'self'; object-src 'self'"
     },
 
+    "devtools_page": {
+      "$ref": "#/definitions/page",
+      "description": "A DevTools extension adds functionality to the Chrome DevTools. It can add new UI panels and sidebars, interact with the inspected page, get information about network requests, and more."
+    },
+
     "chrome_settings_overrides": {},
-    "content_pack": {}
+    "content_pack": {},
+    "current_locale": {}
+
   },
 
   "dependencies": {
