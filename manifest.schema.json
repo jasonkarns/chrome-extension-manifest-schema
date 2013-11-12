@@ -316,7 +316,7 @@
     "match_pattern": {
       "type": "string",
       "format": "match_pattern",
-      "pattern": "<all_urls>|((\\*|http|https|file|ftp|chrome-extension):\\/\\/(\\*|\\*\\.[^\\/\\*]+|[^\\/\\*]+)?(\\/.*))"
+      "pattern": "^((\\*|http|https|file|ftp|chrome-extension):\\/\\/(\\*|\\*\\.[^\\/\\*]+|[^\\/\\*]+)?(\\/.*))|<all_urls>$"
     },
 
     "page": { "$ref": "#/definitions/uri" },
