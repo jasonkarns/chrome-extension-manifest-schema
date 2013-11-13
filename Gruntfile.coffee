@@ -12,12 +12,14 @@ module.exports = (grunt) ->
         fresh: true
 
       manifest:
-        files:
-          "manifest.schema.json": "test/*.json"
+        options:
+          root: "manifest.schema.json"
+        src: "test/*.json"
 
       schema:
-        files:
-          "schemas/json-schema.schema.json": "manifest.schema.json"
+        options:
+          root: "schemas/json-schema.schema.json"
+        src: "manifest.schema.json"
 
   grunt.loadNpmTasks "grunt-json-schema"
   grunt.loadNpmTasks "grunt-tv4"
