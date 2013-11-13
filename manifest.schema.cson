@@ -192,6 +192,28 @@ properties:
         type: "boolean"
         description: "Determines if messages sent via `runtime.connect` or `runtime.sendMessage` are allowed to set `runtime.MessageSender.tlsChannelId`."
 
+  file_browser_handlers:
+    type: "array"
+    description: "You can use this API to enable users to upload files to your website."
+    minItems: 1
+    items:
+      type: "object"
+      required: ["id", "default_title", "file_filters"]
+      additionalProperties: false
+      properties:
+        id:
+          type: "string"
+          description: "Used by event handling code to differentiate between multiple file handlers"
+        default_title:
+          type: "string"
+          description: "What the button will display."
+        file_filters:
+          type: "array"
+          description: "Filetypes to match."
+          minItems: 1
+          items:
+            type: "string"
+
   chrome_settings_overrides: {}
   content_pack: {}
   current_locale: {}
