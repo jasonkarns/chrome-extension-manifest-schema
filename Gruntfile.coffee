@@ -1,3 +1,5 @@
+cson = require 'cson'
+
 module.exports = (grunt) ->
 
   grunt.initConfig
@@ -13,7 +15,7 @@ module.exports = (grunt) ->
 
       manifest:
         options:
-          root: "manifest.schema.json"
+          root: cson.parseFile "manifest.schema.cson"
         src: "test/*.json"
 
       schema:
@@ -24,4 +26,4 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-json-schema"
   grunt.loadNpmTasks "grunt-tv4"
 
-  grunt.registerTask 'default', ['tv4']
+  grunt.registerTask 'default', ['tv4:manifest']
