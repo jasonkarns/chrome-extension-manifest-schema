@@ -214,9 +214,21 @@ properties:
           items:
             type: "string"
 
+  homepage_url:
+    $ref: "#/definitions/uri"
+    description: "The URL of the homepage for this extension."
+
+  incognito:
+    type: "string"
+    description: "Specify how this extension will behave if allowed to run in incognito mode."
+    enum: [ "spanning", "split" ]
+    default: "spanning"
+
+
   chrome_settings_overrides: {}
   content_pack: {}
   current_locale: {}
+  import: {}
 
 dependencies:
   page_action:    not: required: ["browser_action"]
