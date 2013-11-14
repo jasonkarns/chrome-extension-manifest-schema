@@ -382,6 +382,7 @@ properties:
   import: {}
   platforms: {}
   signature: {}
+  spellcheck: {}
 
 dependencies:
   page_action:    not: required: ["browser_action"]
