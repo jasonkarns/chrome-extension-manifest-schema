@@ -255,6 +255,23 @@ properties:
     $ref: "#/definitions/version_string"
     description: "The version of Chrome that your extension, app, or theme requires, if any."
 
+  nacl_modules:
+    type: "array"
+    description: "One or more mappings from MIME types to the Native Client module that handles each type."
+    minItems: 1
+    uniqueItems: true
+    items:
+      type: "object"
+      required: ["path", "mime_type"]
+      additionalProperties: false
+      properties:
+        path:
+          $ref: "#/definitions/uri"
+          description: "The location of a Native Client manifest (a .nmf file) within the extension directory."
+        mime_type:
+          $ref: "#/definitions/mime_type"
+          description: "The MIME type for which the Native Client module will be registered as content handler."
+
 
   chrome_settings_overrides: {}
   content_pack: {}
@@ -326,6 +343,11 @@ definitions:
     type: "string"
     format: "match-pattern"
     pattern: "^((\\*|http|https|file|ftp|chrome-extension):\\/\\/(\\*|\\*\\.[^\\/\\*]+|[^\\/\\*]+)?(\\/.*))|<all_urls>$"
+
+  mime_type:
+    type: "string"
+    format: "mime-type"
+    pattern: "^(?:application|audio|image|message|model|multipart|text|video)\\/[-+.\\w]+$"
 
   page:
     $ref: "#/definitions/uri"
