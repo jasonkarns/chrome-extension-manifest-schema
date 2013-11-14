@@ -320,6 +320,10 @@ properties:
     description: "The short name is typically used where there is insufficient space to display the full name."
     maxLength: 12
 
+  update_url:
+    $ref: "#/definitions/uri"
+    description: "If you publish using the Chrome Developer Dashboard, ignore this field. If you host your own extension or app: URL to an update manifest XML file."
+
 
   chrome_settings_overrides: {}
   content_pack: {}
