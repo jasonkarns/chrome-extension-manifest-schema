@@ -251,6 +251,10 @@ properties:
     type: "string"
     description: "This value can be used to control the unique ID of an extension, app, or theme when it is loaded during development."
 
+  minimum_chrome_version:
+    $ref: "#/definitions/version_string"
+    description: "The version of Chrome that your extension, app, or theme requires, if any."
+
 
   chrome_settings_overrides: {}
   content_pack: {}
