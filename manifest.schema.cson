@@ -305,6 +305,11 @@ properties:
     $ref: "#/definitions/permissions"
     description: "Use the chrome.permissions API to request declared optional permissions at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary."
 
+  options_page:
+    $ref: "#/definitions/page"
+    description: "To allow users to customize the behavior of your extension, you may wish to provide an options page. If you do, a link to it will be provided from the extensions management page at chrome://extensions. Clicking the Options link opens a new tab pointing at your options page."
+    default: "options.html"
+
   permissions:
     $ref: "#/definitions/permissions"
     description: "Permissions help to limit damage if your extension or app is compromised by malware. Some permissions are also displayed to users before installation, as detailed in Permission Warnings."
