@@ -287,6 +287,10 @@ properties:
         items:
           type: "string"
 
+  offline_enabled:
+    type: "boolean"
+    description: "Whether the app or extension is expected to work offline. When Chrome detects that it is offline, apps with this field set to true will be highlighted on the New Tab page."
+
 
   chrome_settings_overrides: {}
   content_pack: {}
