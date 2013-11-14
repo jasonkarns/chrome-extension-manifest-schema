@@ -329,6 +329,8 @@ properties:
   content_pack: {}
   current_locale: {}
   import: {}
+  platforms: {}
+  signature: {}
 
 dependencies:
   page_action:    not: required: ["browser_action"]
