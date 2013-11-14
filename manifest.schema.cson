@@ -428,6 +428,8 @@ properties:
   platforms: {}
   signature: {}
   spellcheck: {}
+  storage: {}
+  system_indicator: {}
 
 dependencies:
   page_action:    not: required: ["browser_action"]
