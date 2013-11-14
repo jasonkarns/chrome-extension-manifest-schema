@@ -224,6 +224,28 @@ properties:
     enum: [ "spanning", "split" ]
     default: "spanning"
 
+  # TODO
+  input_components:
+    type: "array"
+    description: "Allows your extension to handle keystrokes, set the composition, and manage the candidate window."
+    items:
+      type: "object"
+      required: ["name", "type", "id", "description", "language", "layouts"]
+      additionalProperties: false
+      properties:
+        name:
+          type: "string"
+        type:
+          type: "string"
+        id:
+          type: "string"
+        description:
+          type: "string"
+        language:
+          type: "string"
+        layouts:
+          type: "array"
+
 
   chrome_settings_overrides: {}
   content_pack: {}
