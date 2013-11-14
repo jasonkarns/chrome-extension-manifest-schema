@@ -301,6 +301,14 @@ properties:
         type: "string"
         description: "The keyward that will trigger your extension."
 
+  optional_permissions:
+    $ref: "#/definitions/permissions"
+    description: "Use the chrome.permissions API to request declared optional permissions at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary."
+
+  permissions:
+    $ref: "#/definitions/permissions"
+    description: "Permissions help to limit damage if your extension or app is compromised by malware. Some permissions are also displayed to users before installation, as detailed in Permission Warnings."
+
 
   chrome_settings_overrides: {}
   content_pack: {}
@@ -380,6 +388,13 @@ definitions:
 
   page:
     $ref: "#/definitions/uri"
+
+  permissions:
+    type: "array"
+    uniqueItems: true
+    items:
+      type: "string"
+      format: "permission"
 
   scripts:
     type: "array"
