@@ -15,7 +15,7 @@ module.exports = (grunt) ->
 
       manifest:
         options:
-          root: cson.parseFile "manifest.schema.cson"
+          root: cson.parseFileSync "manifest.schema.cson"
         src: "test/*.json"
 
       schema:
