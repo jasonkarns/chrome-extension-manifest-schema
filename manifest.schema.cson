@@ -161,13 +161,8 @@ properties:
           uniqueItems: true
           items: $ref: "#/definitions/glob_pattern"
 
-
-  # TODO
   content_security_policy:
-    type: "string"
-    description: "This introduces some fairly strict policies that will make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and executed by your extensions and applications."
-    format: "content-security-policy"
-    default: "script-src 'self'; object-src 'self'"
+    $ref: "#/definitions/content_security_policy"
 
   devtools_page:
     $ref: "#/definitions/page"
@@ -344,6 +339,21 @@ properties:
             type: "boolean"
             default: true
 
+  sandbox:
+    type: "object"
+    description: "Defines an collection of app or extension pages that are to be served in a sandboxed unique origin, and optionally a Content Security Policy to use with them."
+    required: [ "pages" ]
+    additionalProperties: false
+    properties:
+      pages:
+        type: "array"
+        minItems: 1
+        uniqueItems: true
+        items: $ref: "#/definitions/page"
+      content_security_policy:
+        $ref: "#/definitions/content_security_policy"
+        default: "sandbox allow-scripts allow-forms"
+
   script_badge:
     type: "object"
     description: "Control the behaviour of the script badge."
@@ -430,6 +440,13 @@ definitions:
           "^(default|mac|windows|linux|chromeos)$":
             type: "string"
             pattern: "^(Ctrl|Command|MacCtrl|Alt|Option)\\+(Shift\\+)?[A-Z]"
+
+  # TODO
+  content_security_policy:
+    type: "string"
+    description: "This introduces some fairly strict policies that will make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and executed by your extensions and applications."
+    format: "content-security-policy"
+    default: "script-src 'self'; object-src 'self'"
 
   glob_pattern:
     type: "string"
