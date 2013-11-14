@@ -375,6 +375,41 @@ properties:
     $ref: "#/definitions/uri"
     description: "If you publish using the Chrome Developer Dashboard, ignore this field. If you host your own extension or app: URL to an update manifest XML file."
 
+  tts_engine:
+    type: "object"
+    description: "Register itself as a speech engine."
+    required: [ "voices" ]
+    additionalProperties: false
+    properties:
+      voices:
+        type: "array"
+        description: "Voices the extension can synthesize."
+        minItems: 1
+        uniqueItems: true
+        items:
+          type: "object"
+          required: [ "voice_name", "event_types" ]
+          additionalProperties: false
+          properties:
+            voice_name:
+              type: "string"
+              description: "Identifies the name of the voice and the engine used."
+            lang:
+              type: "string"
+              description: "Almost always, a voice can synthesize speech in just a single language. When an engine supports more than one language, it can easily register a separate voice for each language."
+            gender:
+              type: "string"
+              description: "If your voice corresponds to a male or female voice, you can use this parameter to help clients choose the most appropriate voice for their application."
+            event_types:
+              type: "array"
+              description: "Events sent to update the client on the progress of speech synthesis."
+              minItems: 1
+              uniqueItems: true
+              items:
+                type: "string"
+                description: ""
+                enum: [ "start", "word", "sentence", "marker", "end", "error" ]
+
 
   chrome_settings_overrides: {}
   content_pack: {}
