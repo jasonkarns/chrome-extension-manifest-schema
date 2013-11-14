@@ -272,6 +272,21 @@ properties:
           $ref: "#/definitions/mime_type"
           description: "The MIME type for which the Native Client module will be registered as content handler."
 
+  oauth2:
+    type: "object"
+    description: "Use the Chrome Identity API to authenticate users: the getAuthToken for users logged into their Google Account and the launchWebAuthFlow for users logged into a non-Google account."
+    required: ["client_id", "scopes"]
+    additionalProperties: false
+    properties:
+      client_id:
+        type: "string"
+        description: "You need to register your app in the Google APIs Console to get the client ID."
+      scopes:
+        type: "array"
+        minItems: 1
+        items:
+          type: "string"
+
 
   chrome_settings_overrides: {}
   content_pack: {}
