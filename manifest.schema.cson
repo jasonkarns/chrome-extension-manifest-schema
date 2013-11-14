@@ -410,6 +410,16 @@ properties:
                 description: ""
                 enum: [ "start", "word", "sentence", "marker", "end", "error" ]
 
+  web_accessible_resources:
+    type: "array"
+    description: "An array of strings specifying the paths (relative to the package root) of packaged resources that are expected to be usable in the context of a web page."
+    minItems: 1
+    uniqueItems: true
+    items:
+      $ref: "#/definitions/uri"
+
+
+
 
   chrome_settings_overrides: {}
   content_pack: {}
