@@ -1,5 +1,5 @@
 {
-  "name" : "`extension.isAllowedFileSchemeAccess` and `extension.isAllowedIncognitoAccess` Example",
+  "name" : "`extension.isAllowedFileSchemeAccess` and `ex",
   "version" : "1.0.0",
   "description" : "Demonstrates the `extension.isAllowedFileSchemeAccess` and `extesion.isAllowedIncognitoAccess` APIs",
   "permissions" : [ "file://*" ],

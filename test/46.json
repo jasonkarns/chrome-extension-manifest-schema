@@ -1,5 +1,5 @@
 {
-  "name" : "Block/allow third-party cookies API example extension",
+  "name" : "Block/allow third-party cookies API example e",
   "version" : "0.1",
   "description" : "Sample extension which demonstrates how to access a preference.",
   "permissions": [ "privacy" ],

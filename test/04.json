@@ -1,5 +1,5 @@
 {
-  "name": "A browser action which changes its icon when clicked",
+  "name": "A browser action which changes its icon when ",
   "description": "Change browser action color when its icon is clicked",
   "version": "1.2",
   "background": { "scripts": ["background.js"] },
