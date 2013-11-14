@@ -315,6 +315,18 @@ properties:
     $ref: "#/definitions/permissions"
     description: "Permissions help to limit damage if your extension or app is compromised by malware. Some permissions are also displayed to users before installation, as detailed in Permission Warnings."
 
+  script_badge:
+    type: "object"
+    description: "Control the behaviour of the script badge."
+    additionalProperties: false
+    properties:
+      default_title:
+        type: "string"
+        description: "Tooltip for the script badge's icon"
+      default_popup:
+        type: "string"
+        description: "The html document to be opened as a popup when the user clicks on the script badge's icon."
+
   short_name:
     type: "string"
     description: "The short name is typically used where there is insufficient space to display the full name."
@@ -335,6 +347,9 @@ properties:
 dependencies:
   page_action:    not: required: ["browser_action"]
   browser_action: not: required: ["page_action"]
+
+  content_scripts: not: required: ["script_badge"]
+  script_badge:    not: required: ["content_scripts"]
 
   background_page:            not: required: ["background_page"]
   page_actions:               not: required: ["page_actions"]
