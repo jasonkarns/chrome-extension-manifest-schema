@@ -164,7 +164,7 @@ properties:
   content_security_policy:
     type: "string"
     description: "This introduces some fairly strict policies that will make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and executed by your extensions and applications."
-    format: "content_security_policy"
+    format: "content-security-policy"
     default: "script-src 'self'; object-src 'self'"
 
   devtools_page:
@@ -308,14 +308,14 @@ definitions:
 
   glob_pattern:
     type: "string"
-    format: "glob_pattern"
+    format: "glob-pattern"
 
   icon:
     $ref: "#/definitions/uri"
 
   match_pattern:
     type: "string"
-    format: "match_pattern"
+    format: "match-pattern"
     pattern: "^((\\*|http|https|file|ftp|chrome-extension):\\/\\/(\\*|\\*\\.[^\\/\\*]+|[^\\/\\*]+)?(\\/.*))|<all_urls>$"
 
   page:
@@ -333,5 +333,4 @@ definitions:
 
   version_string:
     type: "string"
-    format: "version_string"
     pattern: "^(?:\\d{1,5}\\.){0,3}\\d{1,5}$"
