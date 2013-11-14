@@ -315,6 +315,35 @@ properties:
     $ref: "#/definitions/permissions"
     description: "Permissions help to limit damage if your extension or app is compromised by malware. Some permissions are also displayed to users before installation, as detailed in Permission Warnings."
 
+  requirements:
+    type: "object"
+    description: "Technologies required by the app or extension. Hosting sites such as the Chrome Web Store may use this list to dissuade users from installing apps or extensions that will not work on their computer."
+    additionalProperties: false
+    properties:
+      '3D':
+        type: "object"
+        description: "The '3D' requirement denotes GPU hardware acceleration."
+        required: [ "features" ]
+        additionalProperties: false
+        properties:
+          features:
+            type: "array"
+            description: "List of the 3D-related features your app requires."
+            minItems: 1
+            uniqueItems: true
+            items:
+              type: "string"
+              enum: [ "webgl" ]
+      plugins:
+        type: "object"
+        description: "Indicates if an app or extension requires NPAPI to run. This requirement is enabled by default when the manifest includes the 'plugins' field."
+        required: [ "npapi" ]
+        additionalProperties: false
+        properties:
+          npapi:
+            type: "boolean"
+            default: true
+
   script_badge:
     type: "object"
     description: "Control the behaviour of the script badge."
