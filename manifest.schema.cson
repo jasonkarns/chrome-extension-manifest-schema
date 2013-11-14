@@ -291,6 +291,16 @@ properties:
     type: "boolean"
     description: "Whether the app or extension is expected to work offline. When Chrome detects that it is offline, apps with this field set to true will be highlighted on the New Tab page."
 
+  omnibox:
+    type: "object"
+    description: "The omnibox API allows you to register a keyword with Google Chrome's address bar, which is also known as the omnibox."
+    required: ["keyword"]
+    additionalProperties: false
+    properties:
+      keyword:
+        type: "string"
+        description: "The keyward that will trigger your extension."
+
 
   chrome_settings_overrides: {}
   content_pack: {}
