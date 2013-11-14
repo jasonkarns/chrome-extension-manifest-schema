@@ -161,6 +161,7 @@ properties:
           items: $ref: "#/definitions/glob_pattern"
 
 
+  # TODO
   content_security_policy:
     type: "string"
     description: "This introduces some fairly strict policies that will make extensions more secure by default, and provides you with the ability to create and enforce rules governing the types of content that can be loaded and executed by your extensions and applications."
@@ -245,6 +246,10 @@ properties:
           type: "string"
         layouts:
           type: "array"
+
+  key:
+    type: "string"
+    description: "This value can be used to control the unique ID of an extension, app, or theme when it is loaded during development."
 
 
   chrome_settings_overrides: {}
