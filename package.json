@@ -1,0 +1,25 @@
+{
+  "name": "chrome-extension-manifest-schema",
+  "version": "0.0.1",
+  "description": "JSON Schema for validating Chrome extension manifest.json",
+
+  "author": "Jason Karns <jason@karns.name> (http://jason.karns.name)",
+  "license": "MIT",
+  "keywords": [ "chrome", "extension", "manifest", "json", "schema" ],
+
+  "main": "manifest.schema.json",
+
+  "scripts": {
+    "test": "grunt test"
+  },
+  "directories": {
+    "test": "test"
+  },
+
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt-cson": "~0.5.0",
+    "grunt-tv4": "Bartvds/grunt-tv4"
+  }
+}
