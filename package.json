@@ -19,6 +19,7 @@
   "main": "manifest.schema.json",
 
   "scripts": {
+    "prepublish": "grunt cson",
     "test": "grunt test"
   },
   "directories": {
