@@ -7,6 +7,15 @@
   "license": "MIT",
   "keywords": [ "chrome", "extension", "manifest", "json", "schema" ],
 
+  "homepage": "https://github.com/jasonkarns/chrome-extension-manifest-schema",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonkarns/chrome-extension-manifest-schema.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jasonkarns/chrome-extension-manifest-schema/issues"
+  },
+
   "main": "manifest.schema.json",
 
   "scripts": {
