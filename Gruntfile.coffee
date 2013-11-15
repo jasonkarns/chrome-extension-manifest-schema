@@ -27,4 +27,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-cson"
   grunt.loadNpmTasks "grunt-tv4"
 
-  grunt.registerTask 'default', [ 'cson', 'tv4' ]
+  grunt.registerTask 'test', [ 'cson', 'tv4' ]
+  grunt.registerTask 'default', 'test'
